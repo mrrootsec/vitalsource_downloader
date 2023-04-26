@@ -8,18 +8,13 @@ To use the script, set the ISBN number of the book in the script. The script
 downloads each image by sending an HTTP GET request and saving the response in a
 JPEG file. The user can specify the start and end page numbers as command line
 arguments.
-Prerequisites
-
-The following tools are required to use this script:
-    curl
-    bash
 
 # How to use
 To use the script, follow these steps:
 
 1. Open the script in a text editor.
 2. Set the ISBN number of the book in the script (line 5).
-3. Save the cookie in a text file and set the path to the cookie file in the script (line 11).
+3. Copy the cookie from browser and add to the script - Firefox - Developer Tools -> Network Tab -> Look for https://jigsaw.vitalsource.com/books/ url -> Right click on the url -> Copy Value -> Copy Request Headers
 4. Open a terminal and navigate to the directory where the script is saved.
 5. Type chmod +x vitalsource.sh to make the script executable.
 6. Type ./vitalsource.sh <start_page> <end_page> where <start_page> and <end_page> are the page numbers of the book images to download.
