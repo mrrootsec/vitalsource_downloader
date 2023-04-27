@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the book ID
-isbn="9781635678826"
+isbn="XXXXXXXX"
 
 # Check if the ISBN directory exists, create it if it doesn't
 if [ ! -d "$isbn" ]; then
